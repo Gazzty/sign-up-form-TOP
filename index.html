@@ -19,43 +19,62 @@
                 <div class="logo-container-background"></div>
             </div>
             <div id="footer">
-                <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+                <p>Photo by <a href="#">Halie West</a> on <a
+                        href="#">Unsplash</a></p>
             </div>
         </div>
 
         <!-- Text and form part -->
         <div class="main-text-container">
-            <div class="text-container">
+            <div class="text-container" id="first-text">
                 <p>This is not a real online service! You know you need
-                    something like this in your life to help you realize
-                    your deepst dreams.</p>
+                    something like this in your life to help you realize your
+                    deepest dreams.</p>
                 <p>Sign up <em>now</em> to get started</p><br>
                 <p>You <em>know</em> you want to.</p>
             </div>
 
-            <form action="#" method="post">
-                <div class="text-container">
+            <div class="text-container" id="form-container">
+                <form action="#" method="post">
                     <p>Let's do this!</p>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" id="phone-number" name="phone-number"
-                        placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-                    <label for="conf-password">Confirm Password</label>
-                    <input type="password" id="conf-password"
-                        name="conf-password">
+                    <div id="form-input-style">
+                        <div class="form-input-container">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name"
+                                name="first-name" required>
+                        </div>
+                        <div class="form-input-container">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-input-container">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-input-container">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number"
+                                name="phone-number" placeholder="1234-5678"
+                                pattern="[0-9]{4}-[0-9]{4}" required>
+                        </div>
+                        <div class="form-input-container">
+                            <label for="password">Password</label>
+                            <input type="password" id="password"
+                                name="password" required>
+                        </div>
+                        <div class="form-input-container">
+                            <label for="conf-password">Confirm Password</label>
+                            <input type="password" id="conf-password"
+                                name="conf-password" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-container">
-                    <input type="submit">
+
+                <div class="text-container" id="last-text-container">
+                    <input type="submit" value="Create an account">
+                </form>
                     <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
-            </form>
+            </div>
         </div>
     </body>
 </html>
